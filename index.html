@@ -1,8 +1,22 @@
 <!doctype html>
 <html>
-<body>
-  <object id="face" data="face.svg" type="image/svg+xml"></object>
-  <canvas id="lcd" width="192" height="63"></canvas>
-  <script type="module" src="main.js"></script>
+<body style="margin:0">
+
+<div id="wrap" style="position:relative;width:420px">
+
+  <!-- SVG INLINE -->
+  <!-- DÁN TOÀN BỘ NỘI DUNG face.svg VÀO ĐÂY -->
+  <!-- BẮT ĐẦU -->
+  <!-- <svg ...> ... </svg> -->
+  <!-- KẾT THÚC -->
+
+  <canvas id="lcd" width="192" height="63"
+    style="position:absolute;left:110px;top:55px;
+           image-rendering:pixelated;pointer-events:none">
+  </canvas>
+
+</div>
+
+<script type="module" src="main.js"></script>
 </body>
 </html>
